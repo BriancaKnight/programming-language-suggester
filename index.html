@@ -13,58 +13,69 @@
   <h1>Which Programming Language Should You Learn First?</h1>
   <h2>Answer the questions below for a suggestion!</h2>
   <br>
-  <h4>Do you prefer shiny things or dull things?</h4>
-  <form id="shiny-dull">
+  <p>Do you prefer shiny things or dull things?</p>
+  <form id="shinyDull">
     <lable for="shiny">Shiny
-      <input type="radio" name="shiny-dull" value="shiny" checked>
-      <br>
+      <input type="radio" name="shinyDull" value="shiny" checked>
     </lable>
     <lable for="dull">Dull
-      <input type="radio" name="shiny-dull" value="dull">
-      <br>
+      <input type="radio" name="shinyDull" value="dull">
+    </lable>
+  </form>
 
-      <h4>Do you want to own a pet?</h4>
-      <form id="pet-nopet">
-        <lable for="pet">Pet
-          <input type="radio" name="pet-nopet" value="pet" checked>
-          <br>
-        </lable>
-        <lable for="nopet">No Pet
-          <input type="radio" name="snake-nopet" value="nopet">
-          <br>
+  <p>Do you want to own a pet?
+  <p>
+  <form id="petNoPet">
+    <lable for="pet">Pet
+      <input type="radio" name="petNoPet" value="pet" checked>
+    </lable>
+    <lable for="noPet">No Pet
+      <input type="radio" name="petNPet" value="noPet">
+    </lable>
+  </form>
 
-          <h4>Do you like the letter "R"?</h4>
-          <form id="letter">
-            <lable for="yes">Yes
-              <input type="radio" name="letter" value="yes" checked>
-              <br>
-            </lable>
-            <lable for="no">No
-              <input type="radio" name="letter" value="no">
-              <br>
+  <p>Do you like the letter "R"?</p>
+  <form id="letter">
+    <lable for="yes">Yes
+      <input type="radio" name="letter" value="yes" checked>
 
-              <h4>Would you eat Faberge egg?</h4>
-              <form id="faberge">
-                <lable for="yes">Yes
-                  <input type="radio" name="faberge" value="yes" checked>
-                  <br>
-                </lable>
-                <lable for="no">No
-                  <input type="radio" name="faberge" value="no">
-                  <br>
+    </lable>
+    <lable for="no">No
+      <input type="radio" name="letter" value="no">
+    </lable>
+  </form>
 
-                  <h4>Do you have expensive taste?</h4>
-                  <form id="taste">
-                    <lable for="yes">Yes
-                      <input type="radio" name="taste" value="yes" checked>
-                      <br>
-                    </lable>
-                    <lable for="no">No
-                      <input type="radio" name="taste" value="no">
-                      <br>
-                      <br>
-                      <button type="submit"> Let's find out!</button>
-                  </form>
+  <p>Would you eat Faberge egg?</p>
+  <form id="faberge">
+    <lable for="yes">Yes
+      <input type="radio" name="faberge" value="yes" checked>
+
+    </lable>
+    <lable for="no">No
+      <input type="radio" name="faberge" value="no">
+    </lable>
+  </form>
+
+  <p>Do you have expensive taste?</p>
+  <form id="taste">
+    <lable for="yes">Yes
+      <input type="radio" name="taste" value="yes" checked>
+
+    </lable>
+    <lable for="no">No
+      <input type="radio" name="taste" value="no">
+    </lable>
+  </form>
+<br>
+  <button type="submit"> Let's find out!</button>
+
+  </form>
+  <br>
+  <div id="results" class="hidden">
+    <h2>You should start with ... </h2>
+    <p id="answer"></p>
+  </div>
+
 </body>
 
 </html>
