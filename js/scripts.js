@@ -1,6 +1,6 @@
 // Buisness Logic
 
-function submit(event) {
+function Radio(event) {
   event.preventDefault();
   const shinySelect = document.querySelector("input[name='shinyDull']:checked").value;
   const petSelect = document.querySelector("input[name='petNoPet']:checked").value;
@@ -19,11 +19,14 @@ function submit(event) {
 
 let answer;
 if (shinySelect && petSelect && rSelect && fabergeSelect && tasteSelect) {
-  if ((shinySelect === true)) && (petSelect === true) &&
+  if ((shinySelect === true) && (petSelect === false) && (rSelect === true) && (fabergeSelect === true) && (tasteSelect === true)){
+    answer = "Ruby";
+    document.getElementById("result").innerText = answer;
+  }
 }
 
 
 window.addEventListener("load", function () {
-  let answer  = document.querySelector("shinyDull");
-  form.addEventListener("submit", answer)
+  let form = document.querySelector("form");
+  form.addEventListener("submit", Radio)
 })

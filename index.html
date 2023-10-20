@@ -13,39 +13,36 @@
   <h1>Which Programming Language Should You Learn First?</h1>
   <h2>Answer the questions below for a suggestion!</h2>
   <br>
-  <p>Do you prefer shiny things or dull things?</p>
+
+  <p>Do you like shiny things?</p>
   <form id="shinyDull">
-    <lable for="shiny">Shiny
-      <input type="radio" name="shinyDull" value="shiny" checked>
+    <lable for="yes">Yes
+      <input type="radio" name="shinyDull" value="yes" checked>
     </lable>
-    <lable for="dull">Dull
-      <input type="radio" name="shinyDull" value="dull">
+    <lable for="no">No
+      <input type="radio" name="shinyDull" value="no">
     </lable>
   </form>
 
-  <p>Do you want to own a pet?
-  <p>
+  <p>Do you want a pet?</p>
   <form id="petNoPet">
-    <lable for="pet">Pet
-      <input type="radio" name="petNoPet" value="pet" checked>
+    <lable for="yes">Yes
+      <input type="radio" name="petNoPet" value="yes" checked>
     </lable>
-    <lable for="noPet">No Pet
-      <input type="radio" name="petNPet" value="noPet">
+    <lable for="no">No
+      <input type="radio" name="petNoPet" value="no">
     </lable>
   </form>
 
   <p>Do you like the letter "R"?</p>
-  <form id="letter">
-    <lable for="yes">Yes
+  <form id="letter">Yes
       <input type="radio" name="letter" value="yes" checked>
-
-    </lable>
     <lable for="no">No
       <input type="radio" name="letter" value="no">
     </lable>
   </form>
 
-  <p>Would you eat Faberge egg?</p>
+  <p>Are you on a Faberge egg?</p>
   <form id="faberge">
     <lable for="yes">Yes
       <input type="radio" name="faberge" value="yes" checked>
@@ -71,7 +68,7 @@
 
   </form>
   <br>
-  <div id="results" class="hidden">
+  <div id="result" class="hidden">
     <h2>You should start with ... </h2>
     <p id="answer"></p>
   </div>
