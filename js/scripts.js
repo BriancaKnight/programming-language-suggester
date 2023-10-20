@@ -2,7 +2,7 @@
 
 function radio(event) {
   event.preventDefault();
-  const shinySelect = document.querySelector("input#shinyDull:checked").value;
+  const shinySelect = document.querySelector("input[name='shinyDull']:checked").value;
   // const petSelect = document.querySelector("input[name='petNoPet']:checked").value;
   // const rSelect = document.querySelector("input[name='letter']:checked").value;
   // const fabergeSelect = document.querySelector("input[name='faberge']:checked").value;
@@ -18,7 +18,7 @@ function radio(event) {
 // User Interface logic
 
 let answer;
-  if (shinySelect === true){
+  if (shinySelect == true){
     answer = "Ruby";
     document.getElementById("result").innerText = answer;
     document.getElementById("resultDisplay").removeAttribute("class");
@@ -30,9 +30,9 @@ let answer;
 
 
 window.addEventListener("load", function () {
-  let form = document.getElementById("shinyDull");
-  form.addEventListener("submit", radio);
-});
+  let form = document.querySelector("form");
+  form.addEventListener("submit", radio)
+})
 
 
 
