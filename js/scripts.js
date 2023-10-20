@@ -22,6 +22,14 @@ if (shinySelect === "yes" && petSelect === "no" && rSelect === "yes" && fabergeS
   answer = "Rust";
   document.getElementById("result").innerText = answer;
   document.getElementById("resultDisplay").removeAttribute("class");
+} else if (rSelect === "no"){
+  answer = "Python"
+  document.getElementById("result").innerText = answer;
+  document.getElementById("resultDisplay").removeAttribute("class");
+} else if (fabergeSelect === "no"){
+  answer = "Rust"
+  document.getElementById("result").innerText = answer;
+  document.getElementById("resultDisplay").removeAttribute("class");
 } else if (petSelect === "no"){
   answer = "Python"
   document.getElementById("result").innerText = answer;
@@ -34,20 +42,7 @@ if (shinySelect === "yes" && petSelect === "no" && rSelect === "yes" && fabergeS
   answer = "Ruby"
   document.getElementById("result").innerText = answer;
   document.getElementById("resultDisplay").removeAttribute("class");
-
-// } else if (petSelect === "no"){
-//   answer = "Python"
-//   document.getElementById("result").innerText = answer;
-//   document.getElementById("resultDisplay").removeAttribute("class");
-// } else if (tasteSelect === "yes"){
-//   answer = "Ruby"
-//   document.getElementById("result").innerText = answer;
-//   document.getElementById("resultDisplay").removeAttribute("class");
-// } else if (shinySelect === "no"){
-//   answer = "Ruby"
-//   document.getElementById("result").innerText = answer;
-//   document.getElementById("resultDisplay").removeAttribute("class");
-// }
+}
 }
 
 window.addEventListener("load", function() {
